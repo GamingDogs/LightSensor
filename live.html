@@ -38,11 +38,37 @@ div.container {
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span><a>
+					<a class="nav-item nav-link" href="index.html">Home</a>
 					<a class="nav-item nav-link" href="weekly">Weekly Report</a>
-					<a class="nav-item nav-link" href="live.html">Live Data</a>
+					<a class="nav-item nav-link active" href="live.html">Live Data <span class="sr-only">(current)</span></a>
 				</div>
 			</div>
 		</nav>
+		<div class="container">
+        <table id="lightData" class="center table table-bordered table-hover">
+        <thead>
+            <tr>
+                <td>Date</td>
+                <td>Light</td>
+				<td>Lux</td>
+            </tr>
+        </thead>
+        </table>
+		</div>
     </body>
+		<script type="text/javascript" language="javascript" >
+			$(document).ready(function() {
+				var dataTable = $('#lightData').DataTable( {
+					"processing": false,
+					"serverSide": true,
+					"order": [[ 0, "desc" ]],
+					"ajax": {url:"updater.php", type: "post"}
+				});
+				setInterval(function() {
+					var info = dataTable.page.info();
+					dataTable.ajax.reload();
+					dataTable.page(info.page).draw('page');
+				}, 3000);
+			});
+		</script>
 </html>
