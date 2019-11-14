@@ -1,40 +1,8 @@
 <?php
-/*
-	$connection = mysqli_connect('remotemysql.com', 'sUDg9UwluY', 'n6Bgyj1Tu0');
-	$database = mysqli_select_db($connection, 'sUDg9UwluY');
-
-	$sql = "SELECT * from lightsensor ORDER BY Date desc LIMIT 10";
-	$result = $connection->query($sql);
-	while($row = mysqli_fetch_array($result)) {
-		echo "<tr><td>";
-		echo $row['Date'];
-		echo "</td><td>";
-		echo $row['Light'];
-		echo "</td><td>";
-		echo $row['Lux'];
-		echo "</td></tr>";
-	}
-*/
-/*
-	$connection = mysqli_connect('remotemysql.com', 'sUDg9UwluY', 'n6Bgyj1Tu0');
-	$database = mysqli_select_db($connection, 'sUDg9UwluY');
-
-	$sql = "SELECT * from lightsensor ORDER BY Date desc LIMIT 10";
-	$result = $connection->query($sql);
-
-	$dbdata = array();
-
-	while ($row = $result->fetch_assoc()) {
-		$dbdata[] = $row;
-	}
-
-echo json_encode($dbdata);
-*/
-
-$servername = "remotemysql.com";
-$username = "sUDg9UwluY";
-$password = "n6Bgyj1Tu0";
-$dbname = "sUDg9UwluY";
+$servername = "text me to credentials";
+$username = "text me to credentials";
+$password = "text me to credentials";
+$dbname = "text me to credentials";
 $conn = mysqli_connect($servername, $username, $password, $dbname) or die("Connection failed: " . mysqli_connect_error());
 /* Database connection end */
 // storing  request (ie, get/post) global array to a variable
