@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Weekly Reports</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">GamingDogs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home<a>
+          <a class="nav-item nav-link active" href="weekly.html">Weekly Report <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="live.html">Live Data</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+    <div class="col-lg-9 mx-auto">
+        <!-- Accordion -->
+        <div id="accordionExample" class="accordion shadow">
+
+            <!-- Accordion item 1 -->
+            <div class="card">
+                <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                    <h2 class="mb-0">
+                        <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="btn collapsed text-dark font-weight-bold text-uppercase collapsible-link">Weekly Report 1</button>
+                    </h2>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                        <p class="font-weight-light m-0">1. We got our raspberry pi and sensor chip in. We installed raspbian on the SD card for the pi and soldered the leads into the sensor chip.</p>
+                        <p class="font-weight-light m-0">2. We need to wire the sensor chip to the pi, but we did not have the wire to complete that.</p>
+                        <p class="font-weight-light m-0">3. We will get the wire and get the sensor wired and communicating with the pi.</p>
+                        <p class="font-weight-light m-0">4. https://learn.adafruit.com/adafruit-veml7700/assembly - guide to solder the sensor pins.</p>
+                    </div>
+                </div>
+            </div><!-- End -->
+
+            <!-- Accordion item 2 -->
+            <div class="card">
+                <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                    <h2 class="mb-0">
+                        <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="btn collapsed text-dark font-weight-bold text-uppercase collapsible-link">Weekly Report 2</button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                      <p class="font-weight-light m-0">1. This week we successfully mounted the sensor to the breadboard and wired it correctly. We also successfully read data from the sensor using the sample code provided by adafruit's GitHub page.</p>
+                      <p class="font-weight-light m-0">2. Since Ryan has more experience with breadboards and wiring, he ended up wiring the sensor to the breadboard. I ended up installing the sensor libraries to the pi and getting the sample code to work with the pi.</p>
+                      <p class="font-weight-light m-0">3. We had an issue with the breadboard and the pi. The pi would not boot with the breadboard while the sensor was installed in it. We figured out that removing the sensor before we boot it and putting it in after it fully booted fixed our issue.</p>
+                      <p class="font-weight-light m-0">4. Our plan for next week is to wait for our phase 2 instructions and then proceed from there.</p>
+                    </div>
+                </div>
+            </div><!-- End -->
+
+            <!-- Accordion item 3 -->
+            <div class="card">
+                <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                    <h2 class="mb-0">
+                        <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="btn collapsed text-dark font-weight-bold text-uppercase collapsible-link">Weekly Report 3</button>
+                    </h2>
+                </div>
+                <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                      <p class="font-weight-light m-0">1. We fully incorporated a live data page on our website. Data is sent to a database and our website updates its table every 3 seconds based on database changes.</p>
+                      <p class="font-weight-light m-0">2. Ryan set up our database and design of our real-time data table. I added python code for our sensor to send data every 3 seconds and update our table on the website.</p>
+                      <p class="font-weight-light m-0">3. No issues were faced this week.</p>
+                      <p class="font-weight-light m-0">4. Our plan for next week is to move our research paper and weekly updates to our website.</p>
+                    </div>
+                </div>
+            </div><!-- End -->
+
+            <!-- Accordion item 3 -->
+            <div class="card">
+                <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                    <h2 class="mb-0">
+                        <button type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="btn collapsed text-dark font-weight-bold text-uppercase collapsible-link">Weekly Report 4</button>
+                    </h2>
+                </div>
+                <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                      <p class="font-weight-light m-0">1. This week we created a weekly reports page. The page displays our weekly reports by using expandable boxes. All boxes are compact at first but when clicked, it expands to show more information.</p>
+                      <p class="font-weight-light m-0">2. Ryan made a separate document for only weekly reports and I simply just copy and pasted them into our paragraph tags.</p>
+                      <p class="font-weight-light m-0">3. No issues were faced this week.</p>
+                      <p class="font-weight-light m-0">4. For next week, we should only have to move our research document to our website and add links to our code that is on our team GitHub page.</p>
+                    </div>
+                </div>
+            </div><!-- End -->
+
+        </div><!-- End -->
+    </div>
+</div>
+  </body>
+</html>
