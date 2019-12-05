@@ -22,3 +22,44 @@
 .row {
 	padding-top: 5%;
 }
+
+.centernew {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center {
+		padding-top: 5%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td {
+	text-align: center;
+}
+
+html {
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+div.container {
+	margin: 0 auto;
+	max-width:760px;
+	padding-top: 5%;
+}
+
+.modal-header {
+  border-bottom: 0 none;
+  color: white;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+
+.hover:hover {
+  opacity: 0.5;
+}

@@ -7,33 +7,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<style>
-.center {
-		padding-top: 5%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-td {
-	text-align: center;
-}
-
-html {
-	overflow-y: auto;
-	overflow-x: auto;
-}
-
-div.container {
-	margin: 0 auto;
-	max-width:760px;
-	padding-top: 5%;
-}
-
-</style>
     <body>
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="index.html">GamingDogs</a>
+			<a class="navbar-brand" href="index.html"><img src="fsu.png" width="60" height="60"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -45,5 +23,48 @@ div.container {
 				</div>
 			</div>
 		</nav>
+
+		<div class="container">
+		  <div class="jumbotron bg-white text-center border border-dark rounded">
+		    <h1>Gaming Dogs</h1>
+				<p>Made by Rohan More and Ryan Cosner</p>
+				<a href="https://github.com/GamingDogs" target="_blank" class="hover"><img src="git.png"></a>
+				<br>
+				<br>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open File Manager</button>
+		  </div>
+			<div class="text-center">
+
+				<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-dialog-centered">
+				<!-- Modal content-->
+				<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title">File Manager</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<h3>Research Paper</h3>
+					<br>
+					<a href="researchdoc.docx" class="btn btn-primary" download>Download</a>
+					<a href="researchdoc.pdf" class="btn btn-primary" target="_blank">View</a>
+					<hr style="background-color: black;">
+					<h3>Final Paper</h3>
+					<br>
+					<button class="btn btn-primary" disabled>Download</button>
+					<button class="btn btn-primary" disabled>View</button>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</form>
+				</div>
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
     </body>
 </html>

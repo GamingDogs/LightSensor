@@ -6,33 +6,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<style>
-.center {
-		padding-top: 5%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-td {
-	text-align: center;
-}
-
-html {
-	overflow-y: auto;
-	overflow-x: auto;
-}
-
-div.container {
-	margin: 0 auto;
-	max-width:760px;
-	padding-top: 5%;
-}
-
-</style>
     <body>
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="index.html">GamingDogs</a>
+			<a class="navbar-brand" href="index.html"><img src="fsu.png" width="60" height="60"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -45,7 +23,8 @@ div.container {
 			</div>
 		</nav>
 		<div class="container">
-        <table id="lightData" class="center table table-bordered table-hover">
+				<div class="alert alert-info text-center" role="alert">Results are updated every 3 seconds!</div>
+        <table id="lightData" class="table table-bordered table-hover">
         <thead>
             <tr>
                 <td>Date</td>
